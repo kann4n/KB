@@ -1,0 +1,18 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Vim Tips and Tricks",
+      "date": "2026-06-12",
+      "description": "A collection of useful tips and tricks for using the Vim text editor effectively.",
+      "url": "posts/vim-tips-and-tricks.html"
+    },
+    {
+      "id": 1,
+      "title": "Vim Tips and Tricks",
+      "date": "2026-06-12",
+      "description": "A collection of useful tips and tricks for using the Vim text editor effectively.",
+      "url": "posts/vim-tips-and-tricks.html"
+    }
+  ]
+}
