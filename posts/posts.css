@@ -1,0 +1,157 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+    line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #111;
+    line-height: 1.25;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+h1 {
+    font-size: 2rem;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+/* Text */
+p {
+    margin: 1rem 0;
+    text-align: left;
+    hyphens: auto;
+}
+
+a {
+    color: #0366d6;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+a:hover {
+    color: #004182;
+}
+
+a:focus-visible {
+    outline: 2px solid #0366d6;
+    outline-offset: 2px;
+}
+
+/* Collapsible Contents Menu */
+details {
+    background-color: #f4f4f5;
+    border: 1px solid #e4e4e7;
+    border-radius: 6px;
+    padding: 0.85rem 1.25rem;
+    margin: 1.5rem 0;
+}
+
+summary {
+    font-weight: 600;
+    color: #18181b;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+}
+
+summary:focus-visible {
+    outline: 2px solid #0366d6;
+}
+
+details[open] summary {
+    margin-bottom: 0.75rem;
+}
+
+details aside ul {
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+details aside li {
+    margin: 6px 0;
+}
+
+/* Lists */
+ul {
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+}
+
+li {
+    margin: 0.5rem 0;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+th,
+td {
+    padding: 10px 14px;
+    border: 1px solid #d4d4d8;
+    vertical-align: top;
+}
+
+th {
+    background-color: #f4f4f5;
+    font-weight: 600;
+    color: #18181b;
+    white-space: nowrap;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fcfcfc;
+}
+
+/* Inline Code & Configuration Blocks */
+code {
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    font-size: 0.88em;
+    background-color: #f0f0f2;
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    color: #b91c1c;
+}
+
+pre {
+    background-color: #fbf1c7; /* Gruvbox dark background */
+    color: #3c3836;
+    padding: 1.25rem;
+    border-radius: 0px;
+    overflow-x: auto;
+    line-height: 1.45;
+    margin: 1.5rem 0;
+}
+
+pre code {
+    background: transparent;
+    padding: 0;
+    color: inherit;
+    font-size: 0.9rem;
+}

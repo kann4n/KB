@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kannan - Projects</title>
+        <link rel="stylesheet" href="posts.css" />
+    </head>
+
+    <body>
+        <details>
+            <summary>Contents</summary>
+            <aside>
+                <ul>
+                    <li><a href="#intro">Introduction</a></li>
+                    <li><a href="#history">Brief History of Vim</a></li>
+                    <li><a href="#learn">Learn - vimtutor</a></li>
+                    <li><a href="#core">Basics concepts and commands</a></li>
+                    <li><a href="#config">Configuration and plugins</a></li>
+                </ul>
+            </aside>
+        </details>
+
+        <main>
+            <h1>Vim as Your Editor</h1>
+
+            <section id="intro">
+                <h2>Introduction</h2>
+                <p>
+                    Vim is a text editor that has been around since the early
+                    1990s.
+                </p>
+                <p>
+                    This guide dives deep into the why and how of Vim and
+                    Neovim, covering everything from historical context to
+                    advanced Lua extensions. Whether you're a newcomer looking
+                    for a solid foundation or a seasoned user hunting for
+                    performance tweaks, you'll find actionable insights,
+                    real-world examples, and a clear migration path between the
+                    two editors.
+                </p>
+            </section>
+
+            <section id="history">
+                <h2>Brief History of Vim</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Year</th>
+                            <th scope="col">Milestone</th>
+                            <th scope="col">Significance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1976</td>
+                            <td>
+                                <b>Vi</b> created by
+                                <a href="https://en.wikipedia.org/wiki/Bill_Joy"
+                                    >Bill Joy</a
+                                >
+                                for
+                                <a
+                                    href="https://en.wikipedia.org/wiki/Berkeley_Software_Distribution"
+                                    >BSD</a
+                                >
+                            </td>
+                            <td>
+                                The original modal editor that inspired
+                                countless clones.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1991</td>
+                            <td>
+                                <b>Vim (Vi IMproved)</b> released by
+                                <a
+                                    href="https://en.wikipedia.org/wiki/Bram_Moolenaar"
+                                    >Bram Moolenaar</a
+                                >
+                            </td>
+                            <td>
+                                Added scripting, extensibility, and a growing
+                                plugin ecosystem.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2014</td>
+                            <td>
+                                <b>Neovim</b> announced by
+                                <a
+                                    href="https://en.wikipedia.org/wiki/Thiago_de_Arruda"
+                                    >Thiago de Arruda</a
+                                >
+                            </td>
+                            <td>
+                                Aims to refactor Vim's codebase, improve
+                                extensibility, and modernize the architecture.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="learn">
+                <h2>Learn - vimtutor</h2>
+                <p>
+                    Run <code>vimtutor</code> in your terminal to learn the
+                    basics of Vim.
+                </p>
+                <p>
+                    Read at least one chapter. Then try
+                    <a href="https://vim-adventures.com/">Vim Adventures</a> to
+                    get more practice.
+                </p>
+            </section>
+
+            <section id="core">
+                <h2>Basics concepts and commands</h2>
+                <p>
+                    The defining feature of Vim is its
+                    <strong>modal nature</strong>. Unlike traditional text
+                    editors where typing immediately inserts text, Vim separates
+                    reading, navigating, and writing into distinct modes. This
+                    allows you to edit text at the speed of thought without
+                    reaching for the mouse.
+                </p>
+                <p>Here are the primary modes you will use:</p>
+                <ul>
+                    <li>
+                        <strong>Normal Mode:</strong> The default state. Used
+                        for navigating, deleting, and manipulating text. (Press
+                        <code>Esc</code> to return to this mode).
+                    </li>
+                    <li>
+                        <strong>Insert Mode:</strong> Used for typing text.
+                        (Press <code>i</code> to insert before the cursor, or
+                        <code>a</code> to append after).
+                    </li>
+                    <li>
+                        <strong>Visual Mode:</strong> Used for highlighting and
+                        selecting text. (Press <code>v</code> to enter).
+                    </li>
+                    <li>
+                        <strong>Command-Line Mode:</strong> Used for saving,
+                        exiting, and running editor commands. (Press
+                        <code>:</code> from Normal mode).
+                    </li>
+                </ul>
+
+                <h3>Essential Survival Commands</h3>
+                <p>
+                    Before you can run, you have to walk. Here are the basic
+                    commands every Vim user needs to commit to muscle memory:
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Command</th>
+                            <th scope="col">Mode</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>:q</code></td>
+                            <td>Command</td>
+                            <td>
+                                Quit Vim. (Use <code>:q!</code> to force quit
+                                without saving).
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>:w</code></td>
+                            <td>Command</td>
+                            <td>Save (write) the current file.</td>
+                        </tr>
+                        <tr>
+                            <td><code>:wq</code></td>
+                            <td>Command</td>
+                            <td>
+                                Save and exit (write and quit) the current file.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>h, j, k, l</code></td>
+                            <td>Normal</td>
+                            <td>
+                                Move cursor left, down, up, and right
+                                <br />keeps your hands on the home row
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>u</code></td>
+                            <td>Normal</td>
+                            <td>Undo the last action.</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;C-r&gt;</code></td>
+                            <td>Normal</td>
+                            <td>Redo the last undone action.</td>
+                        </tr>
+                        <tr>
+                            <td><code>dd</code></td>
+                            <td>Normal</td>
+                            <td>Delete the entire current line.</td>
+                        </tr>
+                        <tr>
+                            <td><code>p</code></td>
+                            <td>Normal</td>
+                            <td>Paste the last deleted or yanked text.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="config">
+                <h2>Configuration - <code>~/.vimrc</code></h2>
+                <p>
+                    Your <code>~/.vimrc</code> file is your personal
+                    configuration file for Vim.
+                </p>
+                <p>
+                    <a href="https://github.com/theopn/kickstart.vim"
+                        >A launch point for your personal vim configuration</a
+                    >
+                </p>
+
+                <h3>My Config for Vim</h3>
+                <p>
+                    This is the configuration I use to make Vim comparable to
+                    modern editors like VS Code. View the complete setup in my
+                    <a href="https://github.com/kann4n/dotfiles">dotfiles</a>
+                    repository.
+                </p>
+
+                <pre><code>
+" --- Initialization ---
+let mapleader = " "
+call plug#begin('~/.vim/plugged')
+    Plug 'morhetz/gruvbox'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'preservim/nerdtree'
+    Plug 'vim-airline/vim-airline'
+    Plug 'tpope/vim-commentary'
+    Plug 'tpope/vim-surround'
+call plug#end()
+
+" --- General Settings ---
+set nocompatible
+filetype plugin indent on
+syntax on
+set number
+set tabstop=4 shiftwidth=4 expandtab smarttab
+set termguicolors
+set ignorecase smartcase
+set scrolloff=8
+set signcolumn=yes
+set clipboard=unnamedplus
+set encoding=utf-8
+set nobackup nowritebackup
+set updatetime=300
+
+" --- UI ---
+let g:gruvbox_contrast_dark = 'hard'
+set background=dark
+colorscheme gruvbox
+let g:airline_theme='gruvbox'
+
+" --- Essential Keymaps ---
+nnoremap &lt;C-b&gt; :NERDTreeToggle&lt;CR&gt;
+" Diagnostics navigation
+nmap &lt;silent&gt; [g &lt;Plug&gt;(coc-diagnostic-prev)
+nmap &lt;silent&gt; ]g &lt;Plug&gt;(coc-diagnostic-next)
+
+" --- CoC.nvim Setup ---
+function! CheckBackspace() abort
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1] =~# '\s'
+endfunction
+
+" Completion Mappings
+inoremap &lt;silent&gt;&lt;expr&gt; &lt;TAB&gt; coc#pum#visible() ? coc#pum#next(1) : CheckBackspace() ? "\&lt;Tab&gt;" : coc#refresh()
+inoremap &lt;expr&gt;&lt;S-TAB&gt; coc#pum#visible() ? coc#pum#prev(1) : "\&lt;C-h&gt;"
+inoremap &lt;silent&gt;&lt;expr&gt; &lt;CR&gt; coc#pum#visible() ? coc#pum#confirm() : "\&lt;C-g&gt;u\&lt;CR&gt;\&lt;c-r&gt;=coc#on_enter()\&lt;CR&gt;"
+
+" LSP Shortcuts
+nmap &lt;silent&gt; gd &lt;Plug&gt;(coc-definition)
+nmap &lt;silent&gt; gy &lt;Plug&gt;(coc-type-definition)
+nmap &lt;silent&gt; gi &lt;Plug&gt;(coc-implementation)
+nmap &lt;silent&gt; gr &lt;Plug&gt;(coc-references)
+nnoremap &lt;silent&gt; K :call ShowDocumentation()&lt;CR&gt;
+
+function! ShowDocumentation()
+    if CocAction('hasProvider', 'hover')
+        call CocActionAsync('doHover')
+    else
+        call feedkeys('K', 'in')
+    endif
+endfunction
+
+" Commands
+command! -nargs=0 Format :call CocActionAsync('format')
+command! -nargs=0 OR :call CocActionAsync('runCommand', 'editor.action.organizeImport')
+command! FoldAll :call CocActionAsync('fold')
+
+" Auto-commands
+autocmd CursorHold * silent call CocActionAsync('highlight')</code></pre>
+            </section>
+        </main>
+    </body>
+</html>
