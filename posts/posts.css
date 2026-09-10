@@ -131,21 +131,21 @@ tbody tr:nth-child(even) {
 
 /* Inline Code & Configuration Blocks */
 code {
-    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
-    font-size: 0.88em;
-    background-color: #f0f0f2;
+    font-family: monospace, ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    font-size: 0.9em;
+    background-color: #fafafa;
     padding: 0.2em 0.4em;
     border-radius: 4px;
-    color: #b91c1c;
+    color: #f54;
 }
 
 pre {
-    background-color: #fbf1c7; /* Gruvbox dark background */
-    color: #3c3836;
+    background-color: #ddd;
+    color: #000;
     padding: 1.25rem;
     border-radius: 0px;
     overflow-x: auto;
-    line-height: 1.45;
+    line-height: 1.6;
     margin: 1.5rem 0;
 }
 
