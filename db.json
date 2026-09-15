@@ -6,6 +6,13 @@
       "date": "2026-06-12",
       "description": "configs files and tips on making vim as your main editor",
       "url": "posts/vim-as-your-editor.html"
+    },
+    {
+      "id": 2,
+      "title": "Sorting Algorithms",
+      "date": "2026-09-10",
+      "description": "Explanation of sorting algorithms with examples, source code, and visualizations.",
+      "url": "posts/sorting-algorithms.html"
     }
   ]
 }

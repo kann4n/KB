@@ -155,3 +155,13 @@ pre code {
     color: inherit;
     font-size: 0.9rem;
 }
+
+/* canvas */
+canvas {
+    border: 1px solid;
+    background-color: #000;
+}
+
+hr {
+    background-color: 1px dashed black;
+}

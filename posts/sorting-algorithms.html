@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sorting Algorithms</title>
+        <link rel="stylesheet" href="posts.css" />
+        <script src="../scripts/utils.js" defer></script>
+        <script src="../scripts/sorting-algorithms.js" defer></script>
+    </head>
+
+    <body>
+        <details>
+            <summary>Contents</summary>
+            <nav>
+                <ul>
+                    <li><a href="#intro">Introduction</a></li>
+                    <li><a href="#bubble-sort">Bubble Sort</a></li>
+                    <li><a href="#selection-sort">Selection Sort</a></li>
+                </ul>
+            </nav>
+        </details>
+
+        <main>
+            <h1>Sorting Algorithms</h1>
+
+            <section id="intro">
+                <h2>Introduction</h2>
+                <p>
+                    Sorting algorithms are used to arrange elements in a
+                    specific order. This post covers the most common sorting
+                    algorithms, including their implementation and performance
+                    and visualization.
+                </p>
+            </section>
+
+            <noscript>
+                <p style="color: red; font-weight: bold">
+                    Your browser does not support JavaScript. Please enable it
+                    to view the visualization.
+                </p>
+            </noscript>
+
+            <hr />
+
+            <section id="bubble-sort">
+                <h2>Bubble Sort</h2>
+                <p>
+                    Bubble sort is a simple sorting algorithm that repeatedly
+                    steps through the list, compares adjacent elements and swaps
+                    them if they are in the wrong order.
+                </p>
+                <p>
+                    In my understanding it just a sorting funtions that drags
+                    the larger elements to the end of the list.
+                </p>
+                <p>
+                    It is easy to understand and implement compared to most
+                    other algorithms.
+                </p>
+
+                <section>
+                    <h3>Implementation</h3>
+                    <p>Here is a simple implementation of bubble sort in C:</p>
+                    <pre>
+                    <code>
+void bubble_sort(int arr[], int n) {
+    for (int i = 0; i &lt; n; i++) {
+        for (int j = 0; j &lt; n - i - 1; j++) {
+            if (arr[j] &gt; arr[j + 1]) {
+                // swap arr[j] and arr[j + 1]
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+}
+                    </code>
+                    </pre>
+                    <p>
+                        Bubble sort can be optimized by stopping the algorithm
+                        if the inner loop doesn't make any swaps (because it is
+                        already sorted).
+                    </p>
+                </section>
+
+                <section id="bubble-sort-visualization">
+                    <h3>Visualization</h3>
+                    <p>
+                        Here is a cool visualization of bubble sort that I made.
+                    </p>
+                    <canvas id="bubble-sort-canvas"></canvas>
+                    <br />
+                    <button onclick="bubbleSortStart()" class="simplebtn">
+                        Start Sort
+                    </button>
+                    <div>
+                        <label>Array Size: </label>
+                        <input
+                            type="number"
+                            min="3"
+                            max="300"
+                            value="20"
+                            id="bubbleSortSize"
+                        />
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Time Complexity</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Best</th>
+                                <th>Average</th>
+                                <th>Worst</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>O(n)</td>
+                                <td>O(n<sup>2</sup>)</td>
+                                <td>O(n<sup>2</sup>)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+
+            <hr />
+
+            <section id="selection-sort">
+                <h2>Selection Sort</h2>
+            </section>
+        </main>
+    </body>
+</html>
