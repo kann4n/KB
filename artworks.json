@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Asprite Logo",
+    "src": "/assets/artworks/Asprite-Logo.png"
+  },
+  {
+    "title": "Gameboy",
+    "src": "/assets/artworks/Gameboy.png"
+  },
+  {
+    "title": "Tinybro",
+    "src": "/assets/artworks/Tinybro.png"
+  },
+  {
+    "title": "Gamedev Art",
+    "src": "/assets/artworks/gamedev-art.png"
+  },
+  {
+    "title": "sunset-in-beach",
+    "src": "/assets/artworks/sunset-in-beach.jpg"
+  },
+  {
+    "title": "chlidhood-arts",
+    "src": "/assets/artworks/chlidhood-arts.png"
+  }
+]
