@@ -1,38 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artworks</title>
-    <link rel="stylesheet" href="/style.css">
-    <style>
-        .artworks {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-        .artworks img {
-            border: 1px solid;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/index.html" class="hover-color-invert">Home</a></li>
-                <li><a href="/blog.html" class="hover-color-invert">Blog</a></li>
-                <li><a href="/projects.html" class="hover-color-invert">Projects</a></li>
-                <li><a href="/artworks.html" class="hover-color-invert">Artworks</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="artworks">
-        <img src="/assets/artworks/Asprite-Logo.png" alt="Asprite Logo">
-        <img src="/assets/artworks/Gameboy.png" alt="Gameboy">
-        <img src="/assets/artworks/Tinybro.png" alt="Tinybro">
-        <img src="/assets/artworks/gamedev-art.png" alt="Gamedev Art">
-    </main>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Artworks</title>
+        <link rel="stylesheet" href="/style.css" />
+        <style>
+            #artworks-container {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-end;
+                gap: 8px;
+            }
+
+            .art-card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                overflow: scroll;
+            }
+
+            .art-card img {
+                max-width: 350px;
+                height: auto;
+                display: block;
+                image-rendering: pixelated;
+                image-rendering: crisp-edges;
+            }
+
+            .art-card .title {
+                padding: 4px;
+                font-size: 0.9em;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            .loading-text {
+                font-size: 0.9em;
+                color: #f00;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/index.html" class="hover-color-invert">Home</a></li>
+                    <li><a href="/blog.html" class="hover-color-invert">Blog</a></li>
+                    <li><a href="/projects.html" class="hover-color-invert">Projects</a></li>
+                    <li><a href="/artworks.html" class="hover-color-invert">Artworks</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="artworks-container">
+                <div class="loading-text">Loading artworks...</div>
+            </div>
+        </main>
+
+        <script>
+            async function loadArtworksFromJSON() {
+                const container = document.getElementById("artworks-container");
+
+                try {
+                    const response = await fetch("/artworks.json");
+                    if (!response.ok)
+                        throw new Error(
+                            `Failed to load JSON: ${response.status}`,
+                        );
+
+                    const data = await response.json();
+                    container.innerHTML = "";
+
+                    data.forEach((art) => {
+                        const card = document.createElement("div");
+                        card.className = "art-card";
+                        card.innerHTML = `
+                            <img src="${art.src}" alt="${art.title}" loading="lazy">
+                            <span class="title">${art.title}</span>
+                        `;
+
+                        container.appendChild(card);
+                    });
+                } catch (error) {
+                    console.error("Error loading artworks:", error);
+                    container.innerHTML =
+                        '<div class="loading-text">Failed to load artworks.</div>';
+                }
+            }
+
+            loadArtworksFromJSON();
+        </script>
+    </body>
 </html>
