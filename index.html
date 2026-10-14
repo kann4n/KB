@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kannan</title>
+        <style>
+            .container {
+                max-width: 80ch;
+                padding: 1rem;
+                margin: 0 auto;
+                border: none;
+                border-left: 1px solid;
+                border-right: 1px solid;
+            }
+            header,
+            main,
+            footer {
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+            }
+            hr {
+                border: none;
+                border-bottom: 1px solid;
+            }
+            .links {
+                display: flex;
+                gap: 1rem;
+            }
+            .links-row {
+                flex-direction: row;
+            }
+            .links-col {
+                flex-direction: column;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Kannan</h1>
+                <nav class="links links-row">
+                    <a href="index.html">Home</a>
+                    <a href="blogs.html">Blog</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="artworks.html">Artworks</a>
+                </nav>
+            </header>
+            <hr />
+            <main>
+                <img
+                    src="/assets/artworks/Tinybro.png"
+                    alt=""
+                    width="64px"
+                    style="image-rendering: pixelated"
+                />
+
+                <p>Welcome to my <b>website</b>.</p>
+                <p>
+                    Here you can see some of my little
+                    <i><b>blogs, artworks and Projects</b></i>
+                </p>
+            </main>
+            <hr />
+            <footer>
+                <p>Links:</p>
+                <ul class="links links-col">
+                    <li><a href="https://github.com/kann4n">Github</a></li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/ar4vind-kb">
+                            Linkedin
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="/artworks.html">Artworks</a>
+                    </li>
+                    <li>
+                        <a href="/blogs.html"> Blogs </a>
+                    </li>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+    </body>
+</html>
