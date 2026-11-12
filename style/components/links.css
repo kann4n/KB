@@ -1,0 +1,12 @@
+.links {
+    display: flex;
+    gap: 1rem;
+}
+
+.links-row {
+    flex-direction: row;
+}
+
+.links-col {
+    flex-direction: column;
+}

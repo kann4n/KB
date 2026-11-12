@@ -1,0 +1,15 @@
+.container {
+    max-width: 80ch;
+    padding: 1rem;
+    margin: 0 auto;
+    border: none;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+header,
+main,
+footer {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

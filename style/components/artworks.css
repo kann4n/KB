@@ -1,0 +1,51 @@
+.artwork-grid {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    column-count: 3;
+    column-gap: 1.5rem;
+}
+
+.artwork-grid li {
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
+    border: none;
+    
+    padding: 0.5rem;
+}
+
+.artwork-grid img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.artwork-pixelated {
+    image-rendering: pixelated;
+}
+
+.artwork-sprite {
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.artwork-caption {
+    margin-top: 0.5rem;
+}
+
+.artwork-caption .post-meta {
+    margin-top: 0.15rem;
+}
+
+@media (max-width: 60ch) {
+    .artwork-grid {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 40ch) {
+    .artwork-grid {
+        column-count: 1;
+    }
+}
