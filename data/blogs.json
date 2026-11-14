@@ -1,0 +1,22 @@
+[
+  {
+    "id": "why-simple",
+    "title": "Simple is better than complex",
+    "date": "2026-11-11",
+    "paragraphs": [
+      "For long, I kept redesigning this website instead of writing anything on it. deleting css, html files and starting over and over again. As I started writing again, I realized that simple is better than complex. So this website is simpler than it was before.",
+      "Everything here is hand-written HTML and CSS. If you view source, that is the whole thing. I like that."
+    ],
+    "links": []
+  },
+  {
+    "id": "drawing-again",
+    "title": "Picking Up a Pen After Ten Years",
+    "date": "2026-03-30",
+    "paragraphs": [
+      "I used to draw a lot as a kid, then stopped. Coming back as an adult is humbling — my hands remember wanting to draw better than they remember how.",
+      "The fix has been small and consistent: one little sketch a day, pixel art or pencil, no pressure for it to be good."
+    ],
+    "links": []
+  }
+]

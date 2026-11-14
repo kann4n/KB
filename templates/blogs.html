@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style/base.css" />
+        <link rel="stylesheet" href="style/layout.css" />
+        <link rel="stylesheet" href="style/components/links.css" />
+        <link rel="stylesheet" href="style/components/blog.css" />
+        <title>Kannan — Blog</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Kannan</h1>
+                <nav class="links links-row">
+                    <a href="index.html">Home</a>
+                    <a href="blogs.html">Blog</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="artworks.html">Artworks</a>
+                </nav>
+            </header>
+            <hr />
+            <main>
+                <h2>Blog</h2>
+                <p>Some of my thoughts, notes and small write-ups.</p>
+
+                <hr />
+
+{{BLOG_POSTS}}
+            </main>
+            <hr />
+            <footer>
+                <p>Links:</p>
+                <ul class="links links-col">
+                    <li><a href="https://github.com/kann4n">Github</a></li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/ar4vind-kb">
+                            Linkedin
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="/artworks.html">Artworks</a>
+                    </li>
+                    <li>
+                        <a href="/blogs.html"> Blogs </a>
+                    </li>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+    </body>
+</html>

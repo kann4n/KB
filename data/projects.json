@@ -1,0 +1,138 @@
+[
+  {
+    "title": "Dark Knight",
+    "description": "A small early game. (abandoned)",
+    "logo": "/assets/project-logos/dark-knight.png",
+    "pixelated": false,
+    "tags": [
+      "JavaScript",
+      "Web",
+      "Game"
+    ],
+    "links": [
+      {
+        "label": "code",
+        "url": "https://github.com/kann4n/Dark-Knight"
+      }
+    ]
+  },
+  {
+    "title": "Fractal Tree",
+    "description": "Recursive fractal tree renderer with sliders for angle, branch length and depth.",
+    "logo": "/assets/project-logos/fractal-tree.png",
+    "pixelated": false,
+    "tags": [
+      "JavaScript",
+      "Canvas",
+      "Graphics"
+    ],
+    "links": [
+      {
+        "label": "code",
+        "url": "https://github.com/kann4n/Fractal-Tree"
+      }
+    ]
+  },
+  {
+    "title": "Imager",
+    "description": "A tiny image processing toolkit \u2014 resizing, filtering and format conversion without dragging in a giant dependency.",
+    "logo": "/assets/project-logos/imager.png",
+    "pixelated": false,
+    "tags": [
+      "C",
+      "No dependencies",
+      "CLI"
+    ],
+    "links": [
+      {
+        "label": "code",
+        "url": "https://github.com/kann4n/imger"
+      }
+    ]
+  },
+  {
+    "title": "Pastebin",
+    "description": "A minimal pastebin clone: paste, get a short URL, share. Built to learn routing, storage and how not to leak people's secrets.",
+    "logo": "/assets/project-logos/pastebin.png",
+    "pixelated": false,
+    "tags": [
+      "Mongoose",
+      "NextJS",
+      "Web"
+    ],
+    "links": [
+      {
+        "label": "code",
+        "url": "https://github.com/kann4n/pastebin"
+      }
+    ]
+  },
+  {
+    "title": "SDL3 Playground",
+    "description": "Experiments with SDL3 \u2014 input, rendering and window handling. Mostly a hobby project.",
+    "logo": "/assets/project-logos/sdl3-001.png",
+    "pixelated": false,
+    "tags": [
+      "C",
+      "SDL3",
+      "Sandbox"
+    ],
+    "links": [
+      {
+        "label": "code",
+        "url": "https://github.com/kann4n/SDL_Projects"
+      }
+    ]
+  },
+  {
+    "title": "Self-Driving Car",
+    "description": "A browser simulation where cars learn to drive around a track using a simple neural network and a genetic algorithm.",
+    "logo": "/assets/project-logos/self-driving-car.png",
+    "pixelated": true,
+    "tags": [
+      "JavaScript",
+      "Canvas",
+      "AI"
+    ],
+    "links": [
+      {
+        "label": "code",
+        "url": "https://github.com/kann4n/self-driveing-car"
+      }
+    ]
+  },
+  {
+    "title": "Tedi",
+    "description": "A tiny terminal text editor with syntax highlighting, searching. written in C with no dependencies or external libraries.",
+    "logo": "/assets/project-logos/tedi-logo.png",
+    "pixelated": true,
+    "tags": [
+      "C",
+      "Terminal",
+      "Editor"
+    ],
+    "links": [
+      {
+        "label": "code",
+        "url": "https://github.com/kann4n/tedi"
+      }
+    ]
+  },
+  {
+    "title": "To-ASCII",
+    "description": "Turns any image or video into ASCII art, with adjustable character ramps and aspect-ratio correction.",
+    "logo": "/assets/project-logos/to-ascii.png",
+    "pixelated": false,
+    "tags": [
+      "JavaScript",
+      "Web",
+      "Art"
+    ],
+    "links": [
+      {
+        "label": "code",
+        "url": "https://github.com/kann4n/to-ascci"
+      }
+    ]
+  }
+]
