@@ -1,0 +1,54 @@
+.project-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.project {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.project-logo {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border: 1px solid;
+    flex-shrink: 0;
+}
+
+.project-logo-pixelated {
+    image-rendering: pixelated;
+    object-fit: contain;
+}
+
+.project-body {
+    min-width: 0;
+}
+
+.project-body h3 {
+    margin: 0 0 0.25rem;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0;
+}
+
+.tags li {
+    font-size: 0.8rem;
+    border: 1px solid;
+    padding: 0.05rem 0.4rem;
+}
+
+.project-links {
+    margin: 0.5rem 0 0;
+    font-size: 0.85rem;
+}

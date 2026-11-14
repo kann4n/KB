@@ -3,39 +3,67 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Kannan - Blogs</title>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style/base.css" />
+        <link rel="stylesheet" href="style/layout.css" />
+        <link rel="stylesheet" href="style/components/links.css" />
+        <title>Kannan</title>
     </head>
     <body>
-        <header>
-            <nav>
-                <a href="index.html" class="logo hover-color-invert">KB</a>
-                <ul>
-                    <li><a href="index.html" class="hover-color-invert">Blog</a></li>
-                    <lii><a href="https://youtu.be/dQw4w9WgXcQ" id="dot">.</a></lii>
-                    <li><a href="/projects.html" class="hover-color-invert">Projects</a></li>
-                    <lii><a href="https://youtu.be/n4nT3UuOVr8" id="dot">.</a></lii>
-                    <li><a href="/artworks.html" class="hover-color-invert">Artworks</a></li>
+        <div class="container">
+            <header>
+                <h1>Kannan</h1>
+                <nav class="links links-row">
+                    <a href="index.html">Home</a>
+                    <a href="blogs.html">Blog</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="artworks.html">Artworks</a>
+                </nav>
+            </header>
+            <hr />
+            <main>
+                <img
+                    src="/assets/artworks/Tinybro.png"
+                    alt=""
+                    width="64px"
+                    style="image-rendering: pixelated"
+                />
+
+                <p>Welcome to my <b>website</b>.</p>
+                <p>
+                    Here you can see some of my little
+                    <i><b>blogs, artworks and Projects</b></i>
+                </p>
+            </main>
+            <hr />
+            <footer>
+                <p>Links:</p>
+                <ul class="links links-col">
+                    <li><a href="https://github.com/kann4n">Github</a></li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/ar4vind-kb">
+                            Linkedin
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="/artworks.html">Artworks</a>
+                    </li>
+                    <li>
+                        <a href="/blogs.html"> Blogs </a>
+                    </li>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
                 </ul>
-            </nav>
-        </header>
-
-        <main>
-            <!--will be replaced by actual content after fetching-->
-            <article class="blog-post show-skeleton"> 
-                <header>
-                    <h2 class="article-title"></h2>
-                    <time datetime="" class="article-date"></time>
-                </header>
-                <p class="article-short-desc"></p>
-                <a href="#" class="read-more article-read-more-link"></a>
-            </article>
-        </main>
-
-        <footer>
-            <p class="text-center"><(^ - ^)></p>
-        </footer>
-
-        <script src="main.js"></script>
+            </footer>
+        </div>
     </body>
 </html>

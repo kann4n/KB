@@ -1,0 +1,28 @@
+.post-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.post-list a {
+    text-decoration: none;
+}
+
+.post-list a:hover {
+    text-decoration: underline;
+}
+
+article {
+    margin-top: 3rem;
+}
+
+article h2 {
+    margin-bottom: 0.25rem;
+}
+
+.post-links {
+    margin: 0.5rem 0 0;
+    font-size: 0.85rem;
+}

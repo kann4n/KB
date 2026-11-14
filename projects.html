@@ -1,41 +1,208 @@
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style/base.css" />
+        <link rel="stylesheet" href="style/layout.css" />
+        <link rel="stylesheet" href="style/components/links.css" />
+        <link rel="stylesheet" href="style/components/projects.css" />
+        <title>Kannan — Projects</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Kannan</h1>
+                <nav class="links links-row">
+                    <a href="index.html">Home</a>
+                    <a href="blogs.html">Blog</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="artworks.html">Artworks</a>
+                </nav>
+            </header>
+            <hr />
+            <main>
+                <header>
+                    <h2>Projects</h2>
+                    <p>Things I have built, tinkered with and shipped.</p>
+                </header>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kannan - Projects</title>
-    <link rel="stylesheet" href="style.css" />
-</head>
+                <ul class="project-list">
+                    <li>
+                        <article class="project">
+                            <img class="project-logo" src="/assets/project-logos/dark-knight.png" alt="" />
+                            <div class="project-body">
+                                <h3>Dark Knight</h3>
+                                <p>
+                                    A small early game. (abandoned)
+                                </p>
+                                <ul class="tags" aria-label="Technologies">
+                                    <li>JavaScript</li>
+                                    <li>Web</li>
+                                    <li>Game</li>
+                                </ul>
+                                <p class="project-links"><a href="https://github.com/kann4n/Dark-Knight" target="_blank" rel="noopener noreferrer">code</a></p>
+                            </div>
+                        </article>
+                    </li>
 
-<body>
-    <header>
-        <nav>
-            <a href="index.html" class="logo hover-color-invert">KB</a>
-            <ul>
-                <li>
-                    <a href="index.html" class="hover-color-invert">Blog</a>
-                </li>
-                <li>
-                    <a href="https://youtu.be/dQw4w9WgXcQ" id="dot">.</a>
-                </li>
-                <li>
-                    <a href="/projects.html" class="hover-color-invert active">Projects</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+                    <li>
+                        <article class="project">
+                            <img class="project-logo" src="/assets/project-logos/fractal-tree.png" alt="" />
+                            <div class="project-body">
+                                <h3>Fractal Tree</h3>
+                                <p>
+                                    Recursive fractal tree renderer with sliders for angle, branch length and depth.
+                                </p>
+                                <ul class="tags" aria-label="Technologies">
+                                    <li>JavaScript</li>
+                                    <li>Canvas</li>
+                                    <li>Graphics</li>
+                                </ul>
+                                <p class="project-links"><a href="https://github.com/kann4n/Fractal-Tree" target="_blank" rel="noopener noreferrer">code</a></p>
+                            </div>
+                        </article>
+                    </li>
 
-    <main>
-        <ul class="projects-grid"></ul>
-    </main>
-    <footer>
-        <p class="text-center">
-            <(^ - ^)>
-        </p>
-    </footer>
+                    <li>
+                        <article class="project">
+                            <img class="project-logo" src="/assets/project-logos/imager.png" alt="" />
+                            <div class="project-body">
+                                <h3>Imager</h3>
+                                <p>
+                                    A tiny image processing toolkit — resizing, filtering and format conversion without dragging in a giant dependency.
+                                </p>
+                                <ul class="tags" aria-label="Technologies">
+                                    <li>C</li>
+                                    <li>No dependencies</li>
+                                    <li>CLI</li>
+                                </ul>
+                                <p class="project-links"><a href="https://github.com/kann4n/imger" target="_blank" rel="noopener noreferrer">code</a></p>
+                            </div>
+                        </article>
+                    </li>
 
-    <script src="projects.js"></script>
-</body>
+                    <li>
+                        <article class="project">
+                            <img class="project-logo" src="/assets/project-logos/pastebin.png" alt="" />
+                            <div class="project-body">
+                                <h3>Pastebin</h3>
+                                <p>
+                                    A minimal pastebin clone: paste, get a short URL, share. Built to learn routing, storage and how not to leak people's secrets.
+                                </p>
+                                <ul class="tags" aria-label="Technologies">
+                                    <li>Mongoose</li>
+                                    <li>NextJS</li>
+                                    <li>Web</li>
+                                </ul>
+                                <p class="project-links"><a href="https://github.com/kann4n/pastebin" target="_blank" rel="noopener noreferrer">code</a></p>
+                            </div>
+                        </article>
+                    </li>
 
+                    <li>
+                        <article class="project">
+                            <img class="project-logo" src="/assets/project-logos/sdl3-001.png" alt="" />
+                            <div class="project-body">
+                                <h3>SDL3 Playground</h3>
+                                <p>
+                                    Experiments with SDL3 — input, rendering and window handling. Mostly a hobby project.
+                                </p>
+                                <ul class="tags" aria-label="Technologies">
+                                    <li>C</li>
+                                    <li>SDL3</li>
+                                    <li>Sandbox</li>
+                                </ul>
+                                <p class="project-links"><a href="https://github.com/kann4n/SDL_Projects" target="_blank" rel="noopener noreferrer">code</a></p>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li>
+                        <article class="project">
+                            <img class="project-logo project-logo-pixelated" src="/assets/project-logos/self-driving-car.png" alt="" />
+                            <div class="project-body">
+                                <h3>Self-Driving Car</h3>
+                                <p>
+                                    A browser simulation where cars learn to drive around a track using a simple neural network and a genetic algorithm.
+                                </p>
+                                <ul class="tags" aria-label="Technologies">
+                                    <li>JavaScript</li>
+                                    <li>Canvas</li>
+                                    <li>AI</li>
+                                </ul>
+                                <p class="project-links"><a href="https://github.com/kann4n/self-driveing-car" target="_blank" rel="noopener noreferrer">code</a></p>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li>
+                        <article class="project">
+                            <img class="project-logo project-logo-pixelated" src="/assets/project-logos/tedi-logo.png" alt="" />
+                            <div class="project-body">
+                                <h3>Tedi</h3>
+                                <p>
+                                    A tiny terminal text editor with syntax highlighting, searching. written in C with no dependencies or external libraries.
+                                </p>
+                                <ul class="tags" aria-label="Technologies">
+                                    <li>C</li>
+                                    <li>Terminal</li>
+                                    <li>Editor</li>
+                                </ul>
+                                <p class="project-links"><a href="https://github.com/kann4n/tedi" target="_blank" rel="noopener noreferrer">code</a></p>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li>
+                        <article class="project">
+                            <img class="project-logo" src="/assets/project-logos/to-ascii.png" alt="" />
+                            <div class="project-body">
+                                <h3>To-ASCII</h3>
+                                <p>
+                                    Turns any image or video into ASCII art, with adjustable character ramps and aspect-ratio correction.
+                                </p>
+                                <ul class="tags" aria-label="Technologies">
+                                    <li>JavaScript</li>
+                                    <li>Web</li>
+                                    <li>Art</li>
+                                </ul>
+                                <p class="project-links"><a href="https://github.com/kann4n/to-ascci" target="_blank" rel="noopener noreferrer">code</a></p>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </main>
+            <hr />
+            <footer>
+                <p>Links:</p>
+                <ul class="links links-col">
+                    <li><a href="https://github.com/kann4n">Github</a></li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/ar4vind-kb">
+                            Linkedin
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="/artworks.html">Artworks</a>
+                    </li>
+                    <li>
+                        <a href="/blogs.html"> Blogs </a>
+                    </li>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+    </body>
 </html>

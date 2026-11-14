@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Tinybro",
+    "image": "/assets/artworks/Tinybro.png",
+    "alt": "Tinybro, a 16x16 pixel character",
+    "meta": "Pixel art · 16 × 16",
+    "pixelated": true,
+    "sprite": true,
+    "width": 128
+  },
+  {
+    "title": "Game Boy",
+    "image": "/assets/artworks/Gameboy.png",
+    "alt": "Pixel art Game Boy",
+    "meta": "Pixel art · 32 × 32",
+    "pixelated": true,
+    "sprite": true,
+    "width": 128
+  },
+  {
+    "title": "Aseprite Logo",
+    "image": "/assets/artworks/Asprite-Logo.png",
+    "alt": "Aseprite logo in pixel art",
+    "meta": "Pixel art · 32 × 32",
+    "pixelated": true,
+    "sprite": true,
+    "width": 128
+  },
+  {
+    "title": "Blood Sword",
+    "image": "/assets/artworks/blood-sword.png",
+    "alt": "Pixel art blood sword",
+    "meta": "Pixel art · 64 × 64",
+    "pixelated": true,
+    "sprite": true,
+    "width": 192
+  },
+  {
+    "title": "Childhood Arts",
+    "image": "/assets/artworks/chlidhood-arts.png",
+    "alt": "Strip of childhood drawings",
+    "meta": "Scan · 256 × 64",
+    "pixelated": true,
+    "sprite": false
+  },
+  {
+    "title": "Game Dev Art",
+    "image": "/assets/artworks/gamedev-art.png",
+    "alt": "Game development themed illustration",
+    "meta": "Digital · 600 × 400",
+    "pixelated": false,
+    "sprite": false
+  },
+  {
+    "title": "Sunset on the Beach",
+    "image": "/assets/artworks/sunset-in-beach.jpg",
+    "alt": "Sunset over a beach",
+    "meta": "Digital · 1200 × 900",
+    "pixelated": false,
+    "sprite": false
+  }
+]

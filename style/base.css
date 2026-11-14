@@ -1,0 +1,18 @@
+body {
+    font-family: "Public Sans", sans-serif;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid;
+}
+
+code {
+    font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo,
+        Consolas, monospace;
+}
+
+.post-meta {
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
