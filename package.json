@@ -2,8 +2,9 @@
   "name": "kb",
   "private": true,
   "scripts": {
-    "build": "npm run build:projects && npm run build:blogs",
+    "build": "npm run build:projects && npm run build:blogs && npm run build:artworks",
     "build:projects": "node scripts/build-projects.mjs",
-    "build:blogs": "node scripts/build-blogs.mjs"
+    "build:blogs": "node scripts/build-blogs.mjs",
+    "build:artworks": "node scripts/build-artworks.mjs"
   }
 }
