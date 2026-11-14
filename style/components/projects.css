@@ -47,3 +47,8 @@
     border: 1px solid;
     padding: 0.05rem 0.4rem;
 }
+
+.project-links {
+    margin: 0.5rem 0 0;
+    font-size: 0.85rem;
+}

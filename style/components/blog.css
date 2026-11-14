@@ -21,3 +21,8 @@ article {
 article h2 {
     margin-bottom: 0.25rem;
 }
+
+.post-links {
+    margin: 0.5rem 0 0;
+    font-size: 0.85rem;
+}
